@@ -1,0 +1,8 @@
+C:\Users\Joshu\Desktop\C#\ElizaIsSilly\bin\Debug\ElizaIsSilly.exe.config
+C:\Users\Joshu\Desktop\C#\ElizaIsSilly\bin\Debug\ElizaIsSilly.exe
+C:\Users\Joshu\Desktop\C#\ElizaIsSilly\bin\Debug\ElizaIsSilly.pdb
+C:\Users\Joshu\Desktop\C#\ElizaIsSilly\obj\Debug\ElizaIsSilly.csproj.AssemblyReference.cache
+C:\Users\Joshu\Desktop\C#\ElizaIsSilly\obj\Debug\ElizaIsSilly.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joshu\Desktop\C#\ElizaIsSilly\obj\Debug\ElizaIsSilly.csproj.CoreCompileInputs.cache
+C:\Users\Joshu\Desktop\C#\ElizaIsSilly\obj\Debug\ElizaIsSilly.exe
+C:\Users\Joshu\Desktop\C#\ElizaIsSilly\obj\Debug\ElizaIsSilly.pdb
