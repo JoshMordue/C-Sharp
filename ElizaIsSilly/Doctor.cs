@@ -48,7 +48,7 @@ namespace ElizaIsSilly
                                                     "quit"
                                                 };
 
-        static Dictionary<string, string> reflections = new Dictionary<string, string> {
+        static Dictionary<string, string> Reflections = new Dictionary<string, string> {
                                                                                    {" am", " are"},
                                                                                    {" was", " were"},
                                                                                    {"I ", "you "},
@@ -66,7 +66,7 @@ namespace ElizaIsSilly
                                                                                    {"I'm", "you're"}
                                                                                 };
 
-        static List<List<string>> responses = new List<List<string>> {
+        static List<List<string>> Responses = new List<List<string>> {
             new List<string> {"Life? Don't talk to me about life.", "At least you have a life, I'm stuck inside this computer.", "Life can be good. Remember, 'this, too, will pass'."},
             new List<string> {"Why do you need %1?", "Would it really help you to get %1?", "Are you sure you need %1?"},
             new List<string> {"Do you really think I don't %1?", "Perhaps eventually I will %1.", "Do you really want me to %1?"},
@@ -110,7 +110,7 @@ namespace ElizaIsSilly
             new List<string> {"Please tell me more.", "Let's change focus a bit... Tell me about your family.", "Can you elaborate on that?", "Why do you say that %1?", "I see.", "Very interesting.", "%1?", "I see.  And what does that tell you?", "How does that make you feel?", "How do you feel when you say that?"},
         };
 
-        static Random random = new Random();
+        static Random randomNumbers = new Random();
 
         public static string Intro()
         {
@@ -123,22 +123,22 @@ namespace ElizaIsSilly
             "Hello. How are you feeling today?");
         }
 
-        public static string response(string userinput)
+        public static string Response(string userInput)
         {
             // check through the matches list, and if there's a match, strip off the match and replace with the response.
             // 
-            // If the response contains %1, replace that with the Remainder of the input string.
-            // Before replacing, change words in the Remainder of the input with the corresponding entry from the reflections dictionary.
-            var output = "";
-            string Remainder = "";
-            for (var index = 0; index < matches.Count; index++)
+            // If the response contains %1, replace that with the remainder of the input string.
+            // Before replacing, change words in the remainder of the input with the corresponding entry from the reflections dictionary.
+            string output = "";
+            string remainder = "";
+            for (int index = 0; index < matches.Count; index++)
             {
                 string match = matches[index];
-                var position = userinput.ToLower().IndexOf(match);
+                int position = userInput.ToLower().IndexOf(match);
                 if (position > -1)
                 {
                     // found a match, delete everything up to the end of the text we found.
-                    string rem = userinput.Remove(0, position + match.Length);
+                    string rem = userInput.Remove(0, position + match.Length);
 
                     // Now replace the reflections: I -> you, etc
                     // We need to split the input into words, to avoid changing eg. me -> you then the same you -> me.
@@ -146,11 +146,11 @@ namespace ElizaIsSilly
 
                     for (int i = 0; i < words.Length; i++)
                     {
-                        foreach (string reflection in reflections.Keys)
+                        foreach (string reflection in Reflections.Keys)
                         {
                             if (words[i].Equals(reflection))
                             {
-                                words[i] = reflections[reflection];
+                                words[i] = Reflections[reflection];
                                 break;
                             }
                         }
@@ -159,10 +159,10 @@ namespace ElizaIsSilly
                     rem = String.Join(" ", words);
 
                     // Strip leading and trailing spaces.
-                    Remainder = rem.Trim();
+                    remainder = rem.Trim();
 
-                    var randomIndex = random.Next(0, responses[index].Count);
-                    output = responses[index][randomIndex];
+                    int randomIndex = randomNumbers.Next(0, Responses[index].Count);
+                    output = Responses[index][randomIndex];
                     break;
                 }
             }
@@ -170,12 +170,12 @@ namespace ElizaIsSilly
             // If there wasn't a match, use the last item in the responses list.
             if (output == "")
             {
-                int randomIndex = random.Next(0, responses[responses.Count - 1].Count);
-                output = responses[responses.Count - 1][randomIndex];
+                int randomIndex = randomNumbers.Next(0, Responses[Responses.Count - 1].Count);
+                output = Responses[Responses.Count - 1][randomIndex];
             }
 
             // Now substitute the modified input for %1 (if it exists) in the response.
-            output = output.Replace("%1", Remainder);
+            output = output.Replace("%1", remainder);
             return output;
         }
     }
