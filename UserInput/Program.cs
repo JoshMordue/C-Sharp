@@ -20,6 +20,8 @@ namespace UserInput
 
 
             Console.WriteLine("Name: " + name + " Age: " + age);
+            Console.WriteLine($"{name} is {age} years old");
+
         }
     }
 }
