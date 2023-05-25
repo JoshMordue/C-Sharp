@@ -1,0 +1,8 @@
+C:\Users\Joshu\Desktop\C#\Accuracy\bin\Debug\Accuracy.exe.config
+C:\Users\Joshu\Desktop\C#\Accuracy\bin\Debug\Accuracy.exe
+C:\Users\Joshu\Desktop\C#\Accuracy\bin\Debug\Accuracy.pdb
+C:\Users\Joshu\Desktop\C#\Accuracy\obj\Debug\Accuracy.csproj.AssemblyReference.cache
+C:\Users\Joshu\Desktop\C#\Accuracy\obj\Debug\Accuracy.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joshu\Desktop\C#\Accuracy\obj\Debug\Accuracy.csproj.CoreCompileInputs.cache
+C:\Users\Joshu\Desktop\C#\Accuracy\obj\Debug\Accuracy.exe
+C:\Users\Joshu\Desktop\C#\Accuracy\obj\Debug\Accuracy.pdb

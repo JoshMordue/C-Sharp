@@ -1,0 +1,8 @@
+C:\Users\Joshu\Desktop\C#\BuiltinTypes\bin\Debug\BuiltinTypes.exe.config
+C:\Users\Joshu\Desktop\C#\BuiltinTypes\bin\Debug\BuiltinTypes.exe
+C:\Users\Joshu\Desktop\C#\BuiltinTypes\bin\Debug\BuiltinTypes.pdb
+C:\Users\Joshu\Desktop\C#\BuiltinTypes\obj\Debug\BuiltinTypes.csproj.AssemblyReference.cache
+C:\Users\Joshu\Desktop\C#\BuiltinTypes\obj\Debug\BuiltinTypes.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joshu\Desktop\C#\BuiltinTypes\obj\Debug\BuiltinTypes.csproj.CoreCompileInputs.cache
+C:\Users\Joshu\Desktop\C#\BuiltinTypes\obj\Debug\BuiltinTypes.exe
+C:\Users\Joshu\Desktop\C#\BuiltinTypes\obj\Debug\BuiltinTypes.pdb
