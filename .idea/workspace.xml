@@ -2,51 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad616ba3-4f3d-41ff-a837-6e207246395a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/C#.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/.vs/HelloWorld/FileContentIndex/3f0827fc-6b83-436d-9577-dc68041915fb.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/.vs/HelloWorld/FileContentIndex/90ef4d18-4940-460e-8cb9-a7e0b5df6f61.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/.vs/HelloWorld/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/.vs/HelloWorld/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/HelloWorld.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/HelloWorld.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/HelloWorld.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/HelloWorld.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/bin/Debug/net6.0/HelloWorld.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/bin/Debug/net6.0/HelloWorld.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/bin/Debug/net6.0/HelloWorld.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/bin/Debug/net6.0/HelloWorld.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/bin/Debug/net6.0/HelloWorld.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/HelloWorld.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/apphost.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/ref/HelloWorld.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Debug/net6.0/refint/HelloWorld.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/HelloWorld.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/HelloWorld.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/HelloWorld.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Release/net6.0/HelloWorld.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Release/net6.0/HelloWorld.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Release/net6.0/HelloWorld.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Release/net6.0/HelloWorld.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Release/net6.0/HelloWorld.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/Release/net6.0/HelloWorld.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleMenu/.vs/SimpleMenu/FileContentIndex/ddaaf24d-a6c0-4dbd-89de-0aa3da512871.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleMenu/.vs/SimpleMenu/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleMenu/.vs/SimpleMenu/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleMenu/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleMenu/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleMenu/bin/Debug/SimpleMenu.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleMenu/bin/Debug/SimpleMenu.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleMenu/bin/Debug/SimpleMenu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleMenu/bin/Debug/SimpleMenu.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleMenu/obj/Debug/SimpleMenu.exe" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleMenu/obj/Debug/SimpleMenu.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleMenu/obj/Debug/SimpleMenu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleMenu/obj/Debug/SimpleMenu.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,13 +23,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Joshu/Desktop/pythonrevisit"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Joshu/Desktop/pythonrevisit&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
