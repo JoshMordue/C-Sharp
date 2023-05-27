@@ -7,7 +7,7 @@ namespace ElizaIsSilly
         static void Main(string[] args)
         {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(Doctor.Intro());
             Console.ResetColor();
 
