@@ -37,6 +37,9 @@ namespace SimpleMenu
                         Console.WriteLine("Make Espresso");
                         Console.WriteLine("Add the milk to the espresso.");
                         break;
+                    default:
+                        Console.WriteLine("Returning Coins");
+                        break;
 
                 }
             } while (!userChoice.Equals('q'));
