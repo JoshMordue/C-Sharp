@@ -37,6 +37,27 @@ namespace SimpleMenu
                         Console.WriteLine("Make Espresso");
                         Console.WriteLine("Add the milk to the espresso.");
                         break;
+                    case '3':
+                        Console.WriteLine("Mocha");
+                        Console.WriteLine("Steam the milk");
+                        Console.WriteLine("Froth the milk");
+                        Console.WriteLine("Make Espresso");
+                        Console.WriteLine("Add the milk to the espresso.");
+                        break;
+                    case '4':
+                        Console.WriteLine("Americano");
+                        Console.WriteLine("Steam the milk");
+                        Console.WriteLine("Froth the milk");
+                        Console.WriteLine("Make Espresso");
+                        Console.WriteLine("Add the milk to the espresso.");
+                        break;
+                    case '5':
+                        Console.WriteLine("Macchiato");
+                        Console.WriteLine("Steam the milk");
+                        Console.WriteLine("Froth the milk");
+                        Console.WriteLine("Make Espresso");
+                        Console.WriteLine("Add the milk to the espresso.");
+                        break;
                     default:
                         Console.WriteLine("Returning Coins");
                         break;
