@@ -6,11 +6,11 @@ namespace Palindrome
 {
     internal class Program
     {
-        private static string inputText;
+        string inputText;
         bool isPalindrome;
 
 
-        static void Main(string[] args, bool isPalindrome)
+        public void Main(string[] args, bool isPalindrome)
         {
             System.Console.WriteLine("****************");
             Console.WriteLine("Please enter a word/Sentence and we see if it is a palindrome");
@@ -18,15 +18,16 @@ namespace Palindrome
                 inputText = Console.ReadLine();
                 if (inputText != null || Regex.IsMatch(inputText, @"^[a-zA-Z]+$ "));
                 {
-                    isPalindrome = inputCheck(inputText);
+                    inputCheck(inputText);
                 }
                 
             }
         }
-
-        public string inputCheck(string Text) { 
+        public string inputCheck(string Text)
+        {
             Text = Text.Trim(' ');
             Console.WriteLine(Text);
         }
+
     }
 }
