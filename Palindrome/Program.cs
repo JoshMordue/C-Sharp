@@ -8,25 +8,31 @@ namespace Palindrome
         static void Main(string[] args)
         {
             string inputText;
-            bool isPalindrome;
 
             System.Console.WriteLine("****************");
             Console.WriteLine("Please enter a word/Sentence and we see if it is a palindrome.");
             Console.WriteLine("Please note when comparing a sentence spaces will not be considered.");
             while (true) {
+
                 inputText = Console.ReadLine();
-                if (inputText != null || Regex.IsMatch(inputText, @"^[a-zA-Z]+$ "));
+                bool isAlpha = Regex.IsMatch(inputText, @"^[a-zA-Z]+$");
+                Console.WriteLine(isAlpha);
+
+                if (!String.IsNullOrWhiteSpace(inputText) && (isAlpha == true))
                 {
                     Console.WriteLine($"{inputText} was entered.");
                     InputCheck(inputText);
+                }
+                else
+                {
+                    Console.WriteLine($"{inputText} was not valid, Please ensure the word entered is not using numbers");
                 }
 
             }
         }
 
-        public string InputCheck(string Text) 
-        { 
-            Text = Text.Trim(' ');
+        public static string InputCheck(string Text) 
+        {
             Console.WriteLine(Text);
             return Text;
         }
