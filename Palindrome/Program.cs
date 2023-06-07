@@ -1,10 +1,15 @@
 ﻿using System;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Palindrome
 {
     class PalindromeChecker
     {
+
+        private static int textIter;
+        private static int lastChar;
+
         static void Main(string[] args)
         {
             string inputText;
@@ -33,7 +38,13 @@ namespace Palindrome
 
         public static string InputCheck(string Text) 
         {
-            Console.WriteLine(Text);
+            lastChar = Text.Length + 1;
+            textIter = (lastChar / 2);
+
+            Console.WriteLine(textIter);
+            Console.WriteLine(lastChar);
+
+            Console.WriteLine(Text[0]);
             return Text;
         }
     }
