@@ -38,8 +38,23 @@ namespace Palindrome
 
         public static string InputCheck(string Text) 
         {
-            lastChar = Text.Length + 1;
+            lastChar = Text.Count();
             textIter = (lastChar / 2);
+
+            Console.WriteLine(lastChar);
+            Console.WriteLine(textIter);
+
+            for (int i = 0; i < textIter; i += 1)
+            {
+                if (Text[i] != Text[lastChar])
+                {
+                    Console.WriteLine("Not palindrome");
+                    break;
+                }
+
+                lastChar -= 1;
+
+            }
 
             Console.WriteLine(textIter);
             Console.WriteLine(lastChar);
