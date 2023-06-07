@@ -38,7 +38,8 @@ namespace Palindrome
 
         public static string InputCheck(string Text) 
         {
-            lastChar = Text.Count();
+
+            lastChar = Text.Count() - 1;
             textIter = (lastChar / 2);
 
             Console.WriteLine(lastChar);
@@ -46,20 +47,20 @@ namespace Palindrome
 
             for (int i = 0; i < textIter; i += 1)
             {
-                if (Text[i] != Text[lastChar])
+                if (Text[i] < Text[lastChar])
                 {
                     Console.WriteLine("Not palindrome");
                     break;
                 }
 
                 lastChar -= 1;
+                Console.WriteLine(i);
+                Console.WriteLine(textIter);
+                Console.WriteLine(lastChar);
 
             }
 
-            Console.WriteLine(textIter);
-            Console.WriteLine(lastChar);
-
-            Console.WriteLine(Text[0]);
+            Console.WriteLine($"{Text} is a palindrome");
             return Text;
         }
     }
