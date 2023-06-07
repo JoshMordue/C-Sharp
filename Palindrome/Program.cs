@@ -23,7 +23,7 @@ namespace Palindrome
                 bool isAlpha = Regex.IsMatch(inputText, @"^[a-zA-Z]+$");
                 Console.WriteLine(isAlpha);
 
-                if (!String.IsNullOrWhiteSpace(inputText) && (isAlpha == true))
+                if (!String.IsNullOrWhiteSpace(inputText) && (isAlpha == true) && inputText.Length > 3)
                 {
                     Console.WriteLine($"{inputText} was entered.");
                     InputCheck(inputText);
@@ -50,7 +50,7 @@ namespace Palindrome
                 if (Text[i] < Text[lastChar])
                 {
                     Console.WriteLine("Not palindrome");
-                    break;
+                    return Text;
                 }
 
                 lastChar -= 1;
