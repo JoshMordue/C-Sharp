@@ -25,10 +25,9 @@ namespace Palindrome
             while (true) {
 
                 inputText = Console.ReadLine();
-                bool isAlpha = Regex.IsMatch(inputText, @"^[a-zA-Z]+$");
-                Console.WriteLine(isAlpha);
+                bool isAlpha = Regex.IsMatch(inputText, @"^[a-zA-Z ]+$");
 
-                if (!String.IsNullOrWhiteSpace(inputText) && (isAlpha == true) && inputText.Length > 3)
+                if (!String.IsNullOrEmpty(inputText) && inputText.Length > 3)
                 {
                     Console.WriteLine($"{inputText} was entered.");
                     InputCheck(inputText);
@@ -61,9 +60,6 @@ namespace Palindrome
                 }
 
                 lastChar -= 1;
-                Console.WriteLine(i);
-                Console.WriteLine(textIter);
-                Console.WriteLine(lastChar);
 
             }
 

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad616ba3-4f3d-41ff-a837-6e207246395a" name="Changes" comment="" />
+    <list default="true" id="ad616ba3-4f3d-41ff-a837-6e207246395a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Palindrome/.vs/Palindrome/FileContentIndex/ecff9415-2c1a-4028-a8a8-b326d97c11bd.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Palindrome/.vs/Palindrome/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/Palindrome/.vs/Palindrome/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Palindrome/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Palindrome/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Palindrome/bin/Release/Palindrome.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Palindrome/bin/Release/Palindrome.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Palindrome/bin/Release/Palindrome.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Palindrome/bin/Release/Palindrome.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Palindrome/obj/Release/Palindrome.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Palindrome/obj/Release/Palindrome.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Palindrome/obj/Release/Palindrome.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Palindrome/obj/Release/Palindrome.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
