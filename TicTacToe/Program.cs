@@ -42,21 +42,17 @@ namespace TicTacToe
                     Console.Write("Please ensure you pick a spot that's available.");
                     Console.WriteLine("\n");
                     Thread.Sleep(2000);
+                }
 
-
+                winner = CheckWin();
+                if (winner == 1) {
+                    Console.WriteLine($"Player {player} wins!");
+                    break;
                 }
 
                 Console.Clear();
 
             }
-
-
-
-
-
-
-
-
 
         }
 
@@ -77,7 +73,23 @@ namespace TicTacToe
             Console.WriteLine("     |     |      ");
         }
 
+        private static int CheckWin()
+        {
+            //Checking the horizontal win conditions
+            if (arr[0] == arr[1] && arr[1] == arr[2])
+            {
+                return 1;
+            }
+            if (arr[3] == arr[4] && arr[4] == arr[5])
+            {
+                return 1;
+            }
+            if (arr[5] == arr[6] && arr[6] == arr[7])
+            {
+                return 1;
+            }
 
+        }
 
     }
 }
