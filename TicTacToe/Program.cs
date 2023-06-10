@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Threading;
 
 namespace TicTacToe
 {
@@ -8,6 +8,8 @@ namespace TicTacToe
         static char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
         static int player = 1;
         static int choice;
+
+        static int winner = 0;
 
         static void Main(string[] args)
         {
@@ -18,10 +20,16 @@ namespace TicTacToe
                 Console.WriteLine("Player 1 is 'X', Player 2 is 'O'");
                 Console.WriteLine("*****************************");
                 Board();
-            } while (true);
-            { 
-                 Board();
+            } while (winner == 0);
+            {
+                Board();
+                Console.WriteLine("\n");
                 Console.WriteLine($"Player: {player} turn!");
+                Console.WriteLine("Please enter your choice");
+                Console.WriteLine("\n");
+
+                choice = int.Parse(Console.ReadLine());
+
 
             }
 
