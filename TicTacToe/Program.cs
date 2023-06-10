@@ -31,7 +31,6 @@ namespace TicTacToe
                         arr[choice] = 'O';
                         player--;
                     }
-
                 }
                 else
                 {
@@ -99,6 +98,13 @@ namespace TicTacToe
             if (arr[5] == arr[6] && arr[6] == arr[7])
             {
                 return 1;
+            }
+
+            //checking verticle win conditions
+            if 
+
+
+
             }
 
         }
