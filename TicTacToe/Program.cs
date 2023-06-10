@@ -8,12 +8,11 @@ namespace TicTacToe
         static char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
         static int player = 1; //player 1 is X, player 2 is O
         static int choice;
-
         static int winner = 0;
 
         static void Main(string[] args)
         {
-
+            Console.WriteLine(choice);
             while (winner == 0) {
                 Board();
                 Console.WriteLine("\n");
@@ -47,7 +46,19 @@ namespace TicTacToe
                 winner = CheckWin();
                 if (winner == 1) {
                     Console.WriteLine($"Player {player} wins!");
-                    break;
+                    Console.WriteLine($"Did you want to play again? Enter 1 to Continue 0 to Quit.");
+                    choice = int.Parse(Console.ReadLine());
+
+                    if (choice == 1)
+                    {
+                         char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+                         int player = 1; //player 1 is X, player 2 is O
+                         int winner = 0;
+                    } else
+                    {
+                        Environment.Exit(0);
+                    }
+                
                 }
 
                 Console.Clear();
@@ -55,6 +66,7 @@ namespace TicTacToe
             }
 
         }
+
 
         private static void Board()
         {
