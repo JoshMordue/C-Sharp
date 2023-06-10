@@ -12,7 +12,6 @@ namespace TicTacToe
 
         static void Main(string[] args)
         {
-            Console.WriteLine(choice);
             while (winner == 0) {
                 Board();
                 Console.WriteLine("\n");
@@ -53,6 +52,7 @@ namespace TicTacToe
                     {
                          char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
                          int player = 1; //player 1 is X, player 2 is O
+                         int choice = 0; 
                          int winner = 0;
                     } else
                     {
