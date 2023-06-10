@@ -48,7 +48,7 @@ namespace TicTacToe
                 {
                     if (winner == 1)
                     {
-                        Console.WriteLine($"Player {player} wins!");
+                        Console.WriteLine("Player {0} has won", (player % 2) + 1);
                     }
                     else
                     {
