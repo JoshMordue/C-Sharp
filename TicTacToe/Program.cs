@@ -12,7 +12,8 @@ namespace TicTacToe
 
         static void Main(string[] args)
         {
-            while (winner == 0) {
+            while (winner == 0)
+            {
                 Board();
                 Console.WriteLine("\n");
                 Console.WriteLine($"Player {player}'s turn!");
@@ -42,26 +43,37 @@ namespace TicTacToe
                 }
 
                 winner = CheckWin();
-                if (winner == 1) {
-                    Console.WriteLine($"Player {player} wins!");
+
+                if (winner == 1 || winner == -1)
+                {
+                    if (winner == 1)
+                    {
+                        Console.WriteLine($"Player {player} wins!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("The game outcome is a draw.");
+                    }
+
                     Console.WriteLine($"Did you want to play again? Enter 1 to Continue 0 to Quit.");
                     choice = int.Parse(Console.ReadLine());
 
                     if (choice == 1)
                     {
-                         char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-                         int player = 1; //player 1 is X, player 2 is O
-                         int choice = 0; 
-                         int winner = 0;
-                    } else
+                        char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+                        int player = 1; //player 1 is X, player 2 is O
+                        int choice = 0;
+                        int winner = 0;
+                    }
+                    else
                     {
                         Environment.Exit(0);
                     }
-                
+
                 }
 
                 Console.Clear();
-
+                Console.WriteLine(arr[choice]);
             }
 
         }
@@ -87,27 +99,53 @@ namespace TicTacToe
         private static int CheckWin()
         {
             //Checking the horizontal win conditions
-            if (arr[0] == arr[1] && arr[1] == arr[2])
+            if (arr[1] == arr[2] && arr[2] == arr[3])
             {
                 return 1;
             }
-            if (arr[3] == arr[4] && arr[4] == arr[5])
+
+            else if(arr[4] == arr[5] && arr[5] == arr[6])
             {
                 return 1;
             }
-            if (arr[5] == arr[6] && arr[6] == arr[7])
+
+            else if(arr[7] == arr[8] && arr[8] == arr[9])
             {
                 return 1;
             }
 
             //checking verticle win conditions
-            if 
-
-
-
+            else if(arr[1] == arr[4] && arr[4] == arr[7])
+            {
+                return 1;
             }
 
-        }
+            else if(arr[2] == arr[5] && arr[5] == arr[8])
+            {
+                return 1;
+            }
 
+            else if(arr[3] == arr[6] && arr[6] == arr[9])
+            {
+                return 1;
+            }
+
+            //checking diagonal win conditions
+            else if(arr[1] == arr[5] && arr[5] == arr[9])
+            {
+                return 1;
+            }
+
+            else if (arr[3] == arr[5] && arr[5] == arr[7])
+            {
+                return 1;
+            }
+
+            else if (arr[1] != '1' && arr[2] != '2' && arr[3] != '3' && arr[4] != '4' && arr[5] != '5' && arr[6] != '6' && arr[7] != '7' && arr[8] != '8' && arr[9] != '9')
+            {
+                return -1;
+            }
+            return 0;
+        }
     }
 }
