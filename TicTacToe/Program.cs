@@ -25,6 +25,7 @@ namespace TicTacToe
                     if (player == 1)
                     {
                         arr[choice] = 'X';
+
                         player++;
                     }
                     else
