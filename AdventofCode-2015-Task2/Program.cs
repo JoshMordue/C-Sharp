@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 namespace AdventofCode_2015_Task2
 {
@@ -13,40 +10,50 @@ namespace AdventofCode_2015_Task2
         {
             string path = @"prompt.txt";
             int total = 0;
-            string height = 0;
-            string width = 0;
-            string length = 0;
+            int height;
+            int width;
+            int length;
+            int size;
+            int smallest;
+            int volume;
+            int ribbon;
 
-            var file = File.ReadLines(path);
+            using (StreamReader sr = new StreamReader(path))
+            {
+                string line;
+                var aribbon = 0;
+                // Read and display lines from the file until the end of
+                // the file is reached.
+                while ((line = sr.ReadLine()) != null)
+                {
+                    //parsing the lines assigning to variables 
+                    var results = line.Split('x');
+                    length = int.Parse(results[0]);
+                    width = int.Parse(results[1]);
+                    height = int.Parse(results[2]);
 
-            Console.WriteLine(file);
 
-            //length l, width w, and height  2*l*w + 2*w*h + 2*h*l.
-            //foreach (string line in file)
-            //{
-            //    string[] s = sData.Split('|');
-            //    //Console.WriteLine(results);
-            //    Console.WriteLine(results[0]);
-            //        //Console.WriteLine(results[1]);
-            //        //Console.WriteLine(results[2]);
+                    //finding out answer to task 1
+                    size = (2 * (length * width) + 2 * (width * height) + 2 * (height * length));
 
+                    smallest = (System.Math.Min(System.Math.Min((length * width), (width * height)), (height * length)));
 
-            //        length = results[0];
-            //        width = results[1];
-            //        height = results[2];
-            //        //Console.WriteLine(length + width + height);
+                    total += size + smallest;
 
-            //    }
+                    //calculating the amount of ribbon for task 2
+                    volume = (length * width * height);
+                    ribbon = 2 * (System.Math.Min(System.Math.Min((length + width), (width + height)), (height + length)));
 
+                    aribbon += volume + ribbon;
+
+                    
                 
+                }
+                Console.WriteLine(total);
+                Console.Write(aribbon);
 
 
-
-
-
-
-
-            
+            }
 
         }
     }
