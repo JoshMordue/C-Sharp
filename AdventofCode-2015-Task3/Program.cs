@@ -70,11 +70,10 @@ namespace AdventofCode_2015_Task3
                 }
 
                 uniqueLocations.Add(combination);
-
-
                 int distinctCount = uniqueLocations.Distinct().Count();
 
                 Console.WriteLine(distinctCount);
+
             }
         }
     }
