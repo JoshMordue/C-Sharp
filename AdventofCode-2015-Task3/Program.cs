@@ -1,10 +1,7 @@
-﻿using DocumentFormat.OpenXml.Drawing.Diagrams;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventofCode_2015_Task3
 {
@@ -19,8 +16,8 @@ namespace AdventofCode_2015_Task3
             int ry = 0;
             int turn = 0;
             string combination;
-            List<string> uniqueLocations = new List<string>();
 
+            List<string> uniqueLocations = new List<string>();
 
             string fs = File.ReadAllText(path);
 
@@ -42,7 +39,7 @@ namespace AdventofCode_2015_Task3
                     {
                         x++;
                     }
-                    else
+                    else if(direction == '<')
                     {
                         x--;
                     }
@@ -64,7 +61,7 @@ namespace AdventofCode_2015_Task3
                     {
                         rx++;
                     }
-                    else
+                    else if (direction == '<')
                     {
                         rx--;
                     }
@@ -72,11 +69,10 @@ namespace AdventofCode_2015_Task3
                     turn--;
                 }
 
-
                 uniqueLocations.Add(combination);
 
-                int distinctCount = uniqueLocations.Distinct().Count() + 1;
 
+                int distinctCount = uniqueLocations.Distinct().Count();
 
                 Console.WriteLine(distinctCount);
             }
