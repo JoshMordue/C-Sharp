@@ -15,7 +15,6 @@ namespace AdventofCode_2015_Task5
         {
             string path = @"prompt.txt";
             string line;
-            bool result;
             int counter = 0;
 
             using (StreamReader sentences = new StreamReader(path))
@@ -23,18 +22,13 @@ namespace AdventofCode_2015_Task5
                 while ((line = sentences.ReadLine()) != null)
                 {
 
-                    result = CheckLine(line);
-
-                    if (result == true) {
+                    if (CheckLine(line) == true) {
+                        
                         counter++;
                     }
                    
                 }
                 Console.WriteLine(counter);
-
-
-
-
 
             }
         }
@@ -43,8 +37,6 @@ namespace AdventofCode_2015_Task5
         {
             string[] illegalStrings = { "ab", "cd", "pq", "xy" };
             int vowelCount = 0;
-            //to ensure it does not go out of the index array
-            int position = 0;
 
             //checking for illegal strings
             if (illegalStrings.All(line.Contains))
@@ -52,35 +44,32 @@ namespace AdventofCode_2015_Task5
                 return false;
             }
 
-            for (int i = 0; i < line.Length; i++)
+            for (int i = 0; i < line.Length - 1; i++)
             {
-                if (position < line.Length - 1)
-                {
                     //check for duplicate letters
                     if (line[i] == line[i + 1])
                     {
                         return false;
-                    }
 
-                    position++;
-                }
+                    }
+                
                 //checking for 3 vowels minimum
                 else if (vowelCount < 3)
                 {
                     if (line[i] == 'a' || line[i] == 'e' || line[i] == 'i' || line[i] == 'o' || line[i] == 'u')
                     {
                         vowelCount++;
+                        Console.WriteLine("test3");
+
+                        if (vowelCount > 10)
+                        {
+                            Console.WriteLine("test4");
+                            return true;
+                        }
                     }
 
                 }
             }
-
-            if (vowelCount > 2)
-            {
-                return true;
-            }
-            else
-            {
                 return false;
             }
 
