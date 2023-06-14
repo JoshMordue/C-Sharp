@@ -26,7 +26,7 @@ namespace AdventofCode_2015_Task5
                     }
 
 
-                    if (CheckLine2(line))
+                    if (CheckJump(line) && CheckDoubles(line))
                     {
                         Task2++;
 
@@ -88,43 +88,26 @@ namespace AdventofCode_2015_Task5
         }
 
 
-        static bool CheckLine2(string line)
+        static bool CheckJump(string line)
         {
-            int doubleLetters = 0;
             bool jumpLetter = false;
-            string pair = "";
-            string comparison;
 
             for (int i = 0; i < line.Length; i++)
             {
-                if (i < line.Length - 1)
-                {
-                    pair = ("" + line[i] + line[i + 1]);
-                    comparison = line.Substring(i + 2);
-                    Console.WriteLine(pair);
-                    Console.WriteLine(comparison);
-
-                    if (comparison.Contains(pair))
-                    {
-                        doubleLetters++;
-                    }
-
-                }
 
                 if (i > 1)
+                {
+                    if (line[i] == line[i - 2])
                     {
-                        if (line[i] == line[i - 2])
-                        {
-                            jumpLetter = true;
-                            //Console.WriteLine($"Found jump letters: {jumpLetter}");
-                        }
-
+                        jumpLetter = true;
+                        //Console.WriteLine($"Found jump letters: {jumpLetter}");
                     }
 
                 }
 
-            
-            if (jumpLetter == true && doubleLetters > 1)
+            }
+
+            if (jumpLetter == true)
             {
                 return true;
             }
@@ -132,9 +115,33 @@ namespace AdventofCode_2015_Task5
             return false;
         }
 
+        static bool CheckDoubles(string line)
+        {
+            bool matchFound = false;
 
+            for (int i = 0; i < line.Length - 2; i++)
+            {
+                string thisPairOfTwoLetters = line[i] + line[i + 1].ToString();
+
+                if (line.IndexOf(thisPairOfTwoLetters, i + 2, StringComparison.Ordinal) != -1)
+                {
+                    matchFound = true;
+                    break;
+                }
+            }
+            if (!matchFound)
+                return false;
+            return true;
+
+
+        }
     }
 }
+        
+
+
+    
+
 
 
 
