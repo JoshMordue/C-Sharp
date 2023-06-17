@@ -1,0 +1,3 @@
+C:\Users\Joshu\Desktop\C#\FirstFactorial\obj\Debug\FirstFactorial.csproj.AssemblyReference.cache
+C:\Users\Joshu\Desktop\C#\FirstFactorial\obj\Debug\FirstFactorial.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joshu\Desktop\C#\FirstFactorial\obj\Debug\FirstFactorial.csproj.CoreCompileInputs.cache

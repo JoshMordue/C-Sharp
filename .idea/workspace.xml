@@ -1,7 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad616ba3-4f3d-41ff-a837-6e207246395a" name="Changes" comment="" />
+    <list default="true" id="ad616ba3-4f3d-41ff-a837-6e207246395a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/.vs/AdventofCode-2015-Task1/FileContentIndex/0e7e8542-cc12-43f4-b9e9-26cc20375268.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/.vs/AdventofCode-2015-Task1/FileContentIndex/c005074d-5511-4d10-ae71-baf5fa6f799d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/.vs/AdventofCode-2015-Task1/FileContentIndex/ce2c3a6c-1432-44df-9d3d-574951108f86.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/.vs/AdventofCode-2015-Task1/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/.vs/AdventofCode-2015-Task1/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/.vs/AdventofCode-2015-Task1/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/AdventofCode-2015-Task1.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/AdventofCode-2015-Task1.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/App.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/bin/Debug/AdventofCode-2015-Task1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/bin/Debug/AdventofCode-2015-Task1.exe.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/bin/Debug/AdventofCode-2015-Task1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/bin/Debug/prompt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Debug/AdventofCode-2015-Task1.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Debug/AdventofCode-2015-Task1.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Debug/AdventofCode-2015-Task1.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Debug/AdventofCode-2015-Task1.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Debug/AdventofCode-2015-Task1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Debug/AdventofCode-2015-Task1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task1/obj/Release/AdventofCode-2015-Task1.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/.vs/AdventofCode-2015-Task2/FileContentIndex/ae690358-6c61-4259-aad1-d0347988722f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/.vs/AdventofCode-2015-Task2/FileContentIndex/f57695ee-4c13-4512-aca6-b3be98ed091d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/.vs/AdventofCode-2015-Task2/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/.vs/AdventofCode-2015-Task2/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/AdventofCode-2015-Task2.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/AdventofCode-2015-Task2.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/App.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/bin/Debug/AdventofCode-2015-Task2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/bin/Debug/AdventofCode-2015-Task2.exe.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/bin/Debug/AdventofCode-2015-Task2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/bin/Debug/prompt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Debug/AdventofCode-2015-Task2.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Debug/AdventofCode-2015-Task2.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Debug/AdventofCode-2015-Task2.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Debug/AdventofCode-2015-Task2.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Debug/AdventofCode-2015-Task2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Debug/AdventofCode-2015-Task2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Release/AdventofCode-2015-Task2.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Release/AdventofCode-2015-Task2.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Release/AdventofCode-2015-Task2.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task2/obj/Release/AdventofCode-2015-Task2.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/.vs/AdventofCode-2015-Task3/FileContentIndex/6a8d84b4-43e3-461c-9a57-2a123475de51.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/.vs/AdventofCode-2015-Task3/FileContentIndex/9c6059ae-9987-4568-83f0-d628faed8402.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/.vs/AdventofCode-2015-Task3/FileContentIndex/9fd62a2b-19de-4c97-b8d2-b41bf0f7ebd9.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/.vs/AdventofCode-2015-Task3/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/.vs/AdventofCode-2015-Task3/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/AdventofCode-2015-Task3.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/AdventofCode-2015-Task3.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/App.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/bin/Debug/AdventofCode-2015-Task3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/bin/Debug/AdventofCode-2015-Task3.exe.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/bin/Debug/AdventofCode-2015-Task3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/bin/Debug/DocumentFormat.OpenXml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/bin/Debug/DocumentFormat.OpenXml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/bin/Debug/prompt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/obj/Debug/AdventofCode-2015-Task3.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/obj/Debug/AdventofCode-2015-Task3.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/obj/Debug/AdventofCode-2015-Task3.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/obj/Debug/AdventofCode-2015-Task3.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/obj/Debug/AdventofCode-2015-Task3.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/obj/Debug/AdventofCode-2015-Task3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/obj/Debug/AdventofCode-2015-Task3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/DocumentFormat.OpenXml.2.20.0.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/net35/DocumentFormat.OpenXml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/net35/DocumentFormat.OpenXml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/net40/DocumentFormat.OpenXml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/net40/DocumentFormat.OpenXml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/net46/DocumentFormat.OpenXml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/net46/DocumentFormat.OpenXml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/net6.0/DocumentFormat.OpenXml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/net6.0/DocumentFormat.OpenXml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/netstandard1.3/DocumentFormat.OpenXml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/netstandard1.3/DocumentFormat.OpenXml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/netstandard2.0/DocumentFormat.OpenXml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task3/packages/DocumentFormat.OpenXml.2.20.0/lib/netstandard2.0/DocumentFormat.OpenXml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/.vs/AdventofCode-2015-Task4/FileContentIndex/ebcacb5f-961e-4f22-ad36-d9c478d492b0.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/.vs/AdventofCode-2015-Task4/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/.vs/AdventofCode-2015-Task4/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/AdventofCode-2015-Task4.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/AdventofCode-2015-Task4.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/App.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/bin/Debug/AdventofCode-2015-Task4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/bin/Debug/AdventofCode-2015-Task4.exe.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/bin/Debug/AdventofCode-2015-Task4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/obj/Debug/AdventofCode-2015-Task4.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/obj/Debug/AdventofCode-2015-Task4.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/obj/Debug/AdventofCode-2015-Task4.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/obj/Debug/AdventofCode-2015-Task4.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/obj/Debug/AdventofCode-2015-Task4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/obj/Debug/AdventofCode-2015-Task4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task4/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/.vs/AdventofCode-2015-Task5/FileContentIndex/1d5b8f79-e963-47ea-ac9e-9e9ddfed5425.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/.vs/AdventofCode-2015-Task5/FileContentIndex/8aa143db-0bff-4f0d-93b8-7fb7976ce69d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/.vs/AdventofCode-2015-Task5/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/.vs/AdventofCode-2015-Task5/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/AdventofCode-2015-Task5.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/AdventofCode-2015-Task5.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/App.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/bin/Debug/AdventofCode-2015-Task5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/bin/Debug/AdventofCode-2015-Task5.exe.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/bin/Debug/AdventofCode-2015-Task5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/bin/Debug/prompt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/obj/Debug/AdventofCode-2015-Task5.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/obj/Debug/AdventofCode-2015-Task5.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/obj/Debug/AdventofCode-2015-Task5.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/obj/Debug/AdventofCode-2015-Task5.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/obj/Debug/AdventofCode-2015-Task5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/obj/Debug/AdventofCode-2015-Task5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/AdventofCode-2015-Task5/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/.vs/AdventofCode-2015-Task6/FileContentIndex/e3fab515-fbd3-45bd-835e-b38cf983aae9.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/.vs/AdventofCode-2015-Task6/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/.vs/AdventofCode-2015-Task6/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/AdventofCode-2015-Task6.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/AdventofCode-2015-Task6.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/App.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/bin/Debug/AdventofCode-2015-Task6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/bin/Debug/AdventofCode-2015-Task6.exe.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/bin/Debug/AdventofCode-2015-Task6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/bin/Debug/prompt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/obj/Debug/AdventofCode-2015-Task6.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/obj/Debug/AdventofCode-2015-Task6.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/obj/Debug/AdventofCode-2015-Task6.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/obj/Debug/AdventofCode-2015-Task6.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/obj/Debug/AdventofCode-2015-Task6.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/obj/Debug/AdventofCode-2015-Task6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventofCode-2015-Task6/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +164,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QDBUYreAvuJepcND162Ipu4PlP" />
   <component name="ProjectViewState">
