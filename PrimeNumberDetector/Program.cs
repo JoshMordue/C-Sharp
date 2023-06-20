@@ -13,22 +13,27 @@ namespace PrimeNumberDetector
             int userNumber;
             while (true)
             {
-
-                userNumber = Console.ReadLine("Please enter a number you want to check whether it is prime: ");
+                Console.WriteLine("Please enter a number you want to check whether it is prime: ");
+                userNumber = Convert.ToInt32(Console.ReadLine());
 
                 if (checkNumber(userNumber))
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine($"{userNumber} is a prime number.");
+                    Console.ResetColor();
 
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"{userNumber} is not a prime number.");
+                    Console.ResetColor();
                 }
 
+                Console.WriteLine();
             }
 
-            static bool checkNumber(int Number)
+            bool checkNumber(int Number)
             {
                 if (Number <= 1) return false;
                 if (Number == 2) return true;
@@ -40,7 +45,9 @@ namespace PrimeNumberDetector
                     if (Number % i == 0)
                         return false;
 
+                return true;
             }
+            
 
 
         }
