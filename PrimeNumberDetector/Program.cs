@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace PrimeNumberDetector
 {
@@ -34,6 +31,7 @@ namespace PrimeNumberDetector
             }
 
             bool checkNumber(int Number)
+                //the function uses the number provided to ascertain whether the number is a prime number or not.
             {
                 if (Number <= 1) return false;
                 if (Number == 2) return true;
