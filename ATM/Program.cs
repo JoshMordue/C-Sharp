@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class CardHolder
+public class cardHolder
 {
     string cardNum;
     int pin;
@@ -12,7 +12,7 @@ public class CardHolder
     string lastName;
     decimal balance;
 
-    public CardHolder(string cardNum, int pin, string firstName, string lastName, decimal balance)
+    public cardHolder(string cardNum, int pin, string firstName, string lastName, decimal balance)
     {
         this.cardNum = cardNum;
         this.pin = pin;
@@ -83,7 +83,7 @@ public class CardHolder
             Console.WriteLine("4: Exit");
         }
 
-        void Deposit(CardHolder CurrentUser)
+        void Deposit(cardHolder CurrentUser)
         {
             Console.WriteLine("Depositing");
             Console.WriteLine("**************");
@@ -92,13 +92,13 @@ public class CardHolder
             CurrentUser.SetBalance(deposit + CurrentUser.GetBalance());
         }
 
-        void Withdraw(CardHolder CurrentUser)
+        void Withdraw(cardHolder CurrentUser)
         {
             Console.WriteLine("Withdrawing");
             Console.WriteLine("**************");
             Console.WriteLine("How much would you like to withdraw? ");
             decimal withdraw = Decimal.Parse(Console.ReadLine());
-            if(CurrentUser.GetBalance() > withdraw)
+            if (CurrentUser.GetBalance() > withdraw)
             {
                 Console.WriteLine("Insufficient Balance");
             }
@@ -106,34 +106,35 @@ public class CardHolder
             {
                 CurrentUser.SetBalance(CurrentUser.GetBalance() - withdraw);
                 Console.WriteLine($"You've successfully withdrawn: {withdraw}, New Balance is: {CurrentUser.GetBalance()}");
-            }    
+            }
         }
 
-        void balance(CardHolder CurrentUser)
+        void balance(cardHolder CurrentUser)
         {
             Console.WriteLine("Current Balance: " + CurrentUser.GetBalance());
         }
 
-        List<CardHolder> CardHolders = new List<CardHolder>();
-        CardHolders.Add(new CardHolder("4003830171874018", 5456, "Anne", "Jessop", 1000m));
-        CardHolders.Add(new CardHolder("8936474640510142", 7216, "Terry", "Banks", 62.34m));
-        CardHolders.Add(new CardHolder("6013585142342681", 4563, "Sean", "Deacon", 5478.87m));
-        CardHolders.Add(new CardHolder("0730898193825365", 2488, "Ben", "King", 780.55m));
+        List<cardHolder> cardHolders = new List<cardHolder>();
+        cardHolders.Add(new cardHolder("4003830171874018", 5456, "Anne", "Jessop", 1000m));
+        cardHolders.Add(new cardHolder("8936474640510142", 7216, "Terry", "Banks", 62.34m));
+        cardHolders.Add(new cardHolder("6013585142342681", 4563, "Sean", "Deacon", 5478.87m));
+        cardHolders.Add(new cardHolder("0730898193825365", 2488, "Ben", "King", 780.55m));
 
         //Prompt 
         Console.WriteLine("Welcome to the SimpleATM");
         Console.WriteLine("Please enter your debit card number:");
         string debitCardNum;
-        CardHolder currentUser;
+        int userPin;
+        cardHolder currentUser;
 
         while (true)
         {
             try
             {
                 debitCardNum = Console.ReadLine();
-                //check against the entries
-                currentUser = CardHolders.FirstOrDefault(a => a.cardNum == debitCardNum);
-                if(currentUser != null)
+                //check against the database for the debit card number
+                currentUser = cardHolders.FirstOrDefault(a => a.cardNum == debitCardNum);
+                if (currentUser != null)
                 {
                     break;
                 }
@@ -147,14 +148,15 @@ public class CardHolder
                 Console.WriteLine("Card is not recognised. Please try again.");
 
             }
+        }
 
-            Console.WriteLine("Please enter your pin: ");
-            int userPin;
-
+        Console.WriteLine("Please enter your pin: ");
+        while (true)
+        {
             try
             {
                 userPin = int.Parse(Console.ReadLine());
-                //check against the entries
+                //check for a matching pin
                 if (currentUser.GetPin() == userPin)
                 {
                     break;
@@ -170,11 +172,13 @@ public class CardHolder
 
             }
 
-            Console.WriteLine("Welcome " + currentUser.GetFirstName() + currentUser.GetLastName());
-
-
         }
+
+        Console.WriteLine("Welcome " + currentUser.GetFirstName() + " " + currentUser.GetLastName());
+
 
     }
 
 }
+
+
