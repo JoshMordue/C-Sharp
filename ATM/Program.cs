@@ -109,10 +109,72 @@ public class CardHolder
             }    
         }
 
-        void balance(CardHolder currentUser)
+        void balance(CardHolder CurrentUser)
         {
-            Console.WriteLine("Current Balance: " + currentUser.GetBalance());
+            Console.WriteLine("Current Balance: " + CurrentUser.GetBalance());
         }
+
+        List<CardHolder> CardHolders = new List<CardHolder>();
+        CardHolders.Add(new CardHolder("4003830171874018", 5456, "Anne", "Jessop", 1000m));
+        CardHolders.Add(new CardHolder("8936474640510142", 7216, "Terry", "Banks", 62.34m));
+        CardHolders.Add(new CardHolder("6013585142342681", 4563, "Sean", "Deacon", 5478.87m));
+        CardHolders.Add(new CardHolder("0730898193825365", 2488, "Ben", "King", 780.55m));
+
+        //Prompt 
+        Console.WriteLine("Welcome to the SimpleATM");
+        Console.WriteLine("Please enter your debit card number:");
+        string debitCardNum;
+        CardHolder currentUser;
+
+        while (true)
+        {
+            try
+            {
+                debitCardNum = Console.ReadLine();
+                //check against the entries
+                currentUser = CardHolders.FirstOrDefault(a => a.cardNum == debitCardNum);
+                if(currentUser != null)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Card is not recognised. Please try again.");
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Card is not recognised. Please try again.");
+
+            }
+
+            Console.WriteLine("Please enter your pin: ");
+            int userPin;
+
+            try
+            {
+                userPin = int.Parse(Console.ReadLine());
+                //check against the entries
+                if (currentUser.GetPin() == userPin)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect Pin, Please try again");
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Incorrect Pin, Please try again");
+
+            }
+
+            Console.WriteLine("Welcome " + currentUser.GetFirstName() + currentUser.GetLastName());
+
+
+        }
+
     }
 
 }
