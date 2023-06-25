@@ -14,7 +14,7 @@ namespace ATM
         string lastName;
         double balance;
 
-        public void CardHolder(string cardNum, int pin, string firstName, string lastName, double balance)
+        public CardHolder(string cardNum, int pin, string firstName, string lastName, double balance)
         {
             this.cardNum = cardNum;
             this.pin = pin;
@@ -69,9 +69,25 @@ namespace ATM
         }
 
 
+        public void SetBalance(int newBalance)
+        {
+            balance = newBalance;
+        }
+
+        public static void Main(String[] args)
+        {
+            void printOptions()
+            {
+                Console.WriteLine("Please choose from the following options:");
+                Console.WriteLine("1: Show Balance");
+                Console.WriteLine("2: Deposit");
+                Console.WriteLine("3: Withdraw");
+                Console.WriteLine("4: Exit");
 
 
+            }
 
+        }
 
     }
 }
