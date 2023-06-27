@@ -76,16 +76,17 @@ public class cardHolder
     {
         void printOptions()
         {
+            //Prints the menu containing their options
             Console.WriteLine("Please choose from the following options:");
             Console.WriteLine("1: Show Balance");
             Console.WriteLine("2: Deposit");
             Console.WriteLine("3: Withdraw");
             Console.WriteLine("4: Exit");
-            Console.WriteLine();
         }
 
         void Deposit(cardHolder CurrentUser)
         {
+            //Prompts the user the amount of currency the user would like added to their account then adds it to their total balance.
             Console.WriteLine("Depositing");
             Console.WriteLine("**************");
             Console.WriteLine("How much would you like to deposit? ");
@@ -95,6 +96,8 @@ public class cardHolder
 
         void Withdraw(cardHolder CurrentUser)
         {
+            //Prompts the user the amount of currency the user would like withdrawn from their account,
+            //Checks to ensure they have enough money then subtracts the amount from their total balance.
             Console.WriteLine("Withdrawing");
             Console.WriteLine("**************");
             Console.WriteLine("How much would you like to withdraw? ");
@@ -112,6 +115,7 @@ public class cardHolder
 
         void Balance(cardHolder CurrentUser)
         {
+            //Provides the user information on their total account balance.
             Console.WriteLine("Current Balance: " + CurrentUser.GetBalance());
         }
 
@@ -121,9 +125,10 @@ public class cardHolder
         cardHolders.Add(new cardHolder("6013585142342681", 4563, "Sean", "Deacon", 5478.87m));
         cardHolders.Add(new cardHolder("0730898193825365", 2488, "Ben", "King", 780.55m));
 
-        //Prompt 
+        //Prompts the user to enter their debit card number.
         Console.WriteLine("Welcome to the SimpleATM");
         Console.WriteLine("Please enter your debit card number:");
+
         string debitCardNum;
         int userPin;
         cardHolder currentUser;
@@ -133,7 +138,7 @@ public class cardHolder
             try
             {
                 debitCardNum = Console.ReadLine();
-                //check against the database for the debit card number
+                //check against the database for a matching debit card number
                 currentUser = cardHolders.FirstOrDefault(a => a.cardNum == debitCardNum);
                 if (currentUser != null)
                 {
@@ -156,8 +161,8 @@ public class cardHolder
         {
             try
             {
+                //prompts the user to enter the matching pin number associated with their card number.
                 userPin = int.Parse(Console.ReadLine());
-                //check for a matching pin
                 if (currentUser.GetPin() == userPin)
                 {
                     break;
@@ -181,10 +186,9 @@ public class cardHolder
         do
         {
             printOptions();
-            while (true)
+            try
             {
                 option = int.Parse(Console.ReadLine());
-
                 switch (option)
                 {
                     case 1:
@@ -195,13 +199,17 @@ public class cardHolder
                         break;
                     case 3:
                         Withdraw(currentUser);
-                        break;
-                    case 4:
-                        Console.WriteLine("Thank you for using the Simple ATM, Have a great day!");
-                        break;
-                }
+                        break;                    
                 }
             }
+            catch
+            {
+                Console.WriteLine("Error selecting an option, please reload the application.");
+            }
+        }
+        while (option != 4);
+        {
+            Console.WriteLine("Thank you for using the SimpleATM, Have a great day!");
         }
 
     }
