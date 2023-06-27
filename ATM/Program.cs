@@ -81,6 +81,7 @@ public class cardHolder
             Console.WriteLine("2: Deposit");
             Console.WriteLine("3: Withdraw");
             Console.WriteLine("4: Exit");
+            Console.WriteLine();
         }
 
         void Deposit(cardHolder CurrentUser)
@@ -98,7 +99,7 @@ public class cardHolder
             Console.WriteLine("**************");
             Console.WriteLine("How much would you like to withdraw? ");
             decimal withdraw = Decimal.Parse(Console.ReadLine());
-            if (CurrentUser.GetBalance() > withdraw)
+            if (CurrentUser.GetBalance() < withdraw)
             {
                 Console.WriteLine("Insufficient Balance");
             }
@@ -109,7 +110,7 @@ public class cardHolder
             }
         }
 
-        void balance(cardHolder CurrentUser)
+        void Balance(cardHolder CurrentUser)
         {
             Console.WriteLine("Current Balance: " + CurrentUser.GetBalance());
         }
@@ -175,7 +176,33 @@ public class cardHolder
         }
 
         Console.WriteLine("Welcome " + currentUser.GetFirstName() + " " + currentUser.GetLastName());
+        int option = 0;
 
+        do
+        {
+            printOptions();
+            while (true)
+            {
+                option = int.Parse(Console.ReadLine());
+
+                switch (option)
+                {
+                    case 1:
+                        Balance(currentUser);
+                        break;
+                    case 2:
+                        Deposit(currentUser);
+                        break;
+                    case 3:
+                        Withdraw(currentUser);
+                        break;
+                    case 4:
+                        Console.WriteLine("Thank you for using the Simple ATM, Have a great day!");
+                        break;
+                }
+                }
+            }
+        }
 
     }
 
