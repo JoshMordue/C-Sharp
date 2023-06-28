@@ -1,0 +1,8 @@
+C:\Users\Joshu\Desktop\C#\Ternary\bin\Debug\Ternary.exe.config
+C:\Users\Joshu\Desktop\C#\Ternary\bin\Debug\Ternary.exe
+C:\Users\Joshu\Desktop\C#\Ternary\bin\Debug\Ternary.pdb
+C:\Users\Joshu\Desktop\C#\Ternary\obj\Debug\Ternary.csproj.AssemblyReference.cache
+C:\Users\Joshu\Desktop\C#\Ternary\obj\Debug\Ternary.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joshu\Desktop\C#\Ternary\obj\Debug\Ternary.csproj.CoreCompileInputs.cache
+C:\Users\Joshu\Desktop\C#\Ternary\obj\Debug\Ternary.exe
+C:\Users\Joshu\Desktop\C#\Ternary\obj\Debug\Ternary.pdb

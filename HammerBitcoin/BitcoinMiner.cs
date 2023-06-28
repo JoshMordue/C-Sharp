@@ -278,18 +278,11 @@ namespace HammerBitcoin
         */
         private int CountNewHires()
         {
-            int newEmployees;
-            if (starved > 0)
-            {
-                newEmployees = 0;
-            }
-            else
-            {
-                newEmployees = (20 * computers + cash) / (100 * employees) + 1;
-            }
+            int newEmployees = (starved > 0)
+                ? 0
+                : newEmployees = (20 * computers + cash) / (100 * employees) + 1;
             return newEmployees;
         }
-
         /**
         * Determines the harvest, and collects the new cash.
         * 

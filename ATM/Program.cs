@@ -96,7 +96,7 @@ public class cardHolder
         }
 
         List<cardHolder> cardHolders = new List<cardHolder>();
-        cardHolders.Add(new cardHolder("4003830171874018", 5456, "Anne", "Jessop", 1000));
+        cardHolders.Add(new cardHolder("4003830171874018", 5456, "Anne", "Jessop", 1000m));
         cardHolders.Add(new cardHolder("8936474640510142", 7216, "Terry", "Banks", 62.34m));
         cardHolders.Add(new cardHolder("6013585142342681", 4563, "Sean", "Deacon", 5478.87m));
         cardHolders.Add(new cardHolder("0730898193825365", 2488, "Ben", "King", 780.55m));
