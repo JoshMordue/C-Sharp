@@ -12,13 +12,14 @@ namespace ClassesIntro2
             Car myCar = new Car("Josh");
             Car anotherCar = new Car("Tim");
 
-            myCar.Accelerate();
-            myCar.Accelerate();
-            myCar.Accelerate();
-            myCar.Accelerate();
-            myCar.Decelerate();
-            myCar.Accelerate();
-            anotherCar.Decelerate();
+            myCar.Accelerate(1);
+            myCar.Accelerate(32);
+            myCar.Accelerate(1);
+            myCar.Accelerate(2);
+            myCar.Decelerate(3);
+            myCar.Accelerate(5);
+            anotherCar.Accelerate(50);
+            anotherCar.Decelerate(60);
         }
 
     }
@@ -33,15 +34,22 @@ namespace ClassesIntro2
             name = carName;      
         }
 
-        public void Accelerate()
+        public void Accelerate(int amount)
         {
-            speed++;
+            speed += amount;
             ShowSpeed();
         }
 
-        public void Decelerate()
-        {   
-            speed--;
+        public void Decelerate(int amount)
+        {
+            if (amount > speed)
+            {
+                speed = 0;
+            }
+            else
+            {
+                speed -= amount;
+            }
             ShowSpeed();
         }
 
