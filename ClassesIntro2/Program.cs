@@ -36,16 +36,16 @@ namespace ClassesIntro2
         public void Accelerate()
         {
             speed++;
-            showSpeed();
+            ShowSpeed();
         }
 
         public void Decelerate()
         {   
             speed--;
-            showSpeed();
+            ShowSpeed();
         }
 
-        private void showSpeed()
+        private void ShowSpeed()
         {
             Console.WriteLine($"{name} is going {speed} kilometres per hour");
         }
