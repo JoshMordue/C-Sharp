@@ -60,24 +60,13 @@ namespace CarGame
                     switch (control)
                     {
                         case Left:
-                            for (int i = 0; i < batmobile.Speed; i++)
-                            {
-                                carPosition--;
-                                DrawRoad(carPosition);
-                            }
+                            playing = Drive(batmobile.Speed, ref carPosition, -1);
                             break;
                         case Straight:
-                            for (int i = 0; i < batmobile.Speed; i++)
-                            {
-                                DrawRoad(carPosition);
-                            }
+                            playing = Drive(batmobile.Speed, ref carPosition, 0);
                             break;
-                        case Right:
-                            for (int i = 0; i < batmobile.Speed; i++)
-                            {
-                                carPosition++;
-                                DrawRoad(carPosition);
-                            }
+                        case Right:                            
+                            playing = Drive(batmobile.Speed, ref carPosition, 1);
                             break;
                         case Accelerate:
                             batmobile.Accelerate(accelerationFactor);
@@ -86,7 +75,7 @@ namespace CarGame
                             batmobile.Brake(accelerationFactor);
                             break;
                         case Info:
-                            //batmobile.ShowSpeed();
+                            batmobile.ShowSpeed();
                             break;
                         case Quit:
                             playing = false;
@@ -94,6 +83,29 @@ namespace CarGame
                     }
                 }
             } while (playing);
+        }
+
+        static bool Drive(int speed, ref int position, int direction)
+        {
+            for (int i = 0; i < speed; i++)
+            {
+                position += direction;
+                if (StillOnTrack(position, Road))
+                {
+                    DrawRoad(position);
+                }
+                else
+                {
+                    Console.WriteLine("Oops! You've crashed, game over.");
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        static bool StillOnTrack(int position, String road)
+        {
+            return (position < road.Length) && road[position].Equals(' ');
         }
 
         static void DrawRoad(int carPosition)
@@ -124,7 +136,7 @@ namespace CarGame
             ShowSpeed();
         }
 
-        private void ShowSpeed()
+        public void ShowSpeed()
         {
             Console.WriteLine($"{name} is going {Speed * 10} miles per hour.");
         }
