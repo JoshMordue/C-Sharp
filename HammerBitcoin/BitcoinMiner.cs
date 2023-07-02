@@ -60,7 +60,7 @@ namespace HammerBitcoin
             {
                 computerPrice = UpdateComputerPrice();
                 PrintSummary();
-                BuyComputers();
+                BuyComputers(computerPrice, ref computers, ref cash);
                 SellComputers();
                 PayEmployees();
                 MaintainComputers();
@@ -119,7 +119,7 @@ namespace HammerBitcoin
         * 
         * If a valid amount is entered, the available cash is reduced accordingly.
         */
-        private void BuyComputers()
+        private void BuyComputers(int computerPrice, ref int computers, ref int cash)
         {
             int computersToBuy;
             string question = "How many computers will you buy? ";
