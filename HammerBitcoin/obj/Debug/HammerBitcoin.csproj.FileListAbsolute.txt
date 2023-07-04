@@ -1,8 +1,7 @@
-C:\Users\Joshu\Desktop\C#\HammerBitcoin\bin\Debug\HammerBitcoin.exe.config
-C:\Users\Joshu\Desktop\C#\HammerBitcoin\bin\Debug\HammerBitcoin.exe
-C:\Users\Joshu\Desktop\C#\HammerBitcoin\bin\Debug\HammerBitcoin.pdb
-C:\Users\Joshu\Desktop\C#\HammerBitcoin\obj\Debug\HammerBitcoin.csproj.AssemblyReference.cache
-C:\Users\Joshu\Desktop\C#\HammerBitcoin\obj\Debug\HammerBitcoin.csproj.SuggestedBindingRedirects.cache
-C:\Users\Joshu\Desktop\C#\HammerBitcoin\obj\Debug\HammerBitcoin.csproj.CoreCompileInputs.cache
-C:\Users\Joshu\Desktop\C#\HammerBitcoin\obj\Debug\HammerBitcoin.exe
-C:\Users\Joshu\Desktop\C#\HammerBitcoin\obj\Debug\HammerBitcoin.pdb
+C:\Users\timbuchalka\Desktop\C#Programs\HammerBitcoin\bin\Debug\HammerBitcoin.exe.config
+C:\Users\timbuchalka\Desktop\C#Programs\HammerBitcoin\bin\Debug\HammerBitcoin.exe
+C:\Users\timbuchalka\Desktop\C#Programs\HammerBitcoin\bin\Debug\HammerBitcoin.pdb
+C:\Users\timbuchalka\Desktop\C#Programs\HammerBitcoin\obj\Debug\HammerBitcoin.csprojAssemblyReference.cache
+C:\Users\timbuchalka\Desktop\C#Programs\HammerBitcoin\obj\Debug\HammerBitcoin.csproj.CoreCompileInputs.cache
+C:\Users\timbuchalka\Desktop\C#Programs\HammerBitcoin\obj\Debug\HammerBitcoin.exe
+C:\Users\timbuchalka\Desktop\C#Programs\HammerBitcoin\obj\Debug\HammerBitcoin.pdb
