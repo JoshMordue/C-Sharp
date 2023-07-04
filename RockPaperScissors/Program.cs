@@ -4,9 +4,9 @@ namespace RockPaperScissors
 {
     class Program
     {
-        private const int Rock = 0;
-        private const int Paper = 1;
-        private const int Scissors = 2;
+        private const int Rock = 0; //beats scissors
+        private const int Paper = 1; //beats rock
+        private const int Scissors = 2; //beats paper
         bool playAgain = true;
         static void Main(string[] args)
         {
@@ -66,8 +66,9 @@ namespace RockPaperScissors
                 {
                     Console.WriteLine("It's a draw!");
                 }
-                else if ((playerValue - 1 == computerValue)
-                    || (playerValue == Rock && computerValue == Scissors))
+                //else if ((playerValue - 1 == computerValue)
+                //    || (playerValue == Rock && computerValue == Scissors))
+                else if (playerValue == (computerValue + 1) % 3)
                 {
                     Console.WriteLine("Player Wins!");
                 }
