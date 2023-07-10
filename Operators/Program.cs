@@ -37,8 +37,9 @@ namespace Operators
             double d = 12.0 / 3.0 / 4.0;
             double e = (12.0 / 3.0) / 4.0;
             double f = 12.0 / (3.0 / 4.0);
+            double g = 120 / (3.0 / 4.0);
 
-            Console.WriteLine($"{d}, {e}, {f}");
+            Console.WriteLine($"{d}, {e}, {f}, {g}");
             Console.WriteLine();
 
             int x = 12 + 3 - 4;
