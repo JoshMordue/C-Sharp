@@ -10,39 +10,32 @@ namespace StringExample
     {
         static void Main(string[] args)
         {
-            string courseName = "Learn C# for beginners Crash Course";
+            //                             1         2         3
+            //                   01234567890123456789012345678901234
+            string courseName = "Learn C# for Beginners Crash Course";
 
+            int position = -1;
 
-            int position;
+            do
+            {
+                position = courseName.IndexOf(" c", position + 1, StringComparison.OrdinalIgnoreCase);
+                if (position != -1)
+                {
+                    courseName = ReplaceByIndex(courseName, position, " c".Length, " Java");
+                    Console.WriteLine(courseName);
+                }
+            } while (position != -1);
 
-            position = courseName.IndexOf("c", StringComparison.OrdinalIgnoreCase);
-
-            Console.WriteLine(position);
-
-
-
-
-
-            //string message = "Welcome to ";
-
-            //// Concatonate CourseName to create a new string.
-
-            //string fullMessage = message + courseName;
-            //Console.WriteLine(fullMessage);
-
-            ////use string interpolation 
-            //string fullMessage2 = $"{message}{courseName}";
-            //Console.WriteLine(fullMessage2);
-
-
-            ////use composite formatting with methods that support it
-            //Console.WriteLine("Hello, and {0} the {1}", message, courseName);
-
-            //for (int i = 0; i < courseName.Length; i++)
-            //{
-            //    char character = courseName[i];
-            //    Console.WriteLine(character);
-            //}
+            string fixedString = courseName.Replace(" Java", " C");
+            Console.WriteLine(fixedString);
         }
+
+        private static string ReplaceByIndex(string original, int start, int length, string replacement)
+        {
+            string NewString = original.Remove(start, length);
+            return NewString.Insert(start, replacement);
+        }
+
     }
 }
+
