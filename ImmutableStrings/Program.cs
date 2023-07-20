@@ -16,6 +16,13 @@ namespace ImmutableStrings
             Console.WriteLine($"x = {x}, y = {y}");
 
             Console.WriteLine($"x is the same as y: {object.ReferenceEquals(x, y)}");
+
+            string first = "This is a string";
+            string second = first;
+
+            Console.WriteLine($"First:  {first}");
+            Console.WriteLine($"Second:  {second}");
+            Console.WriteLine($"First is the same as second: {object.ReferenceEquals(first, second)}");
         }
     }
 }
