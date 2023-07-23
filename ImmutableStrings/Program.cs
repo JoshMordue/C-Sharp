@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text;
 
 namespace ImmutableStrings
 {
@@ -10,19 +11,27 @@ namespace ImmutableStrings
     {
         static void Main(string[] args)
         {
-            int x = 5;
-            int y = x;
-
-            Console.WriteLine($"x = {x}, y = {y}");
-
-            Console.WriteLine($"x is the same as y: {object.ReferenceEquals(x, y)}");
-
-            string first = "This is a string";
-            string second = first;
+            StringBuilder first = new StringBuilder("This is a string");
+            StringBuilder second = first;
 
             Console.WriteLine($"First:  {first}");
             Console.WriteLine($"Second:  {second}");
             Console.WriteLine($"First is the same as second: {object.ReferenceEquals(first, second)}");
+
+            Console.WriteLine();
+
+            first = first.Remove(4, 5);
+            //first = first.Insert(4, " is a");
+            Console.WriteLine($"First:  {first}");
+            Console.WriteLine($"Second:  {second}");
+            Console.WriteLine();
+            Console.WriteLine($"First is the same as second: {object.ReferenceEquals(first, second)}");
+            Console.WriteLine($"first == second: {first == second}");
+            Console.WriteLine($"First .Equals second: {first.Equals(second)}");
+
+
+
+
         }
     }
 }
