@@ -11,23 +11,29 @@ namespace ImmutableStrings
     {
         static void Main(string[] args)
         {
-            StringBuilder first = new StringBuilder("This is a string");
-            StringBuilder second = new StringBuilder("This is a string");
+            StringBuilder first = new StringBuilder("The values are");
 
-            Console.WriteLine($"First:  {first}");
-            Console.WriteLine("Clearing First...");
+            int a = 12;
+            int b = 34;
+            int c = 56;
 
-            //first.Length = 0;
-            //Console.WriteLine($"First:  *{first}*");
+            //first.AppendFormat("a = {0}, b = {1}, c = {2}", a, b, c);
+            first.AppendLine(":");
+            first.Append($"a = {a}, b = {b}, c = {c}");
+            Console.WriteLine(first);
 
-            //first.Append("Another string");
-            first.Clear().Append("Another String");
-            first.Clear();
-            second.Clear();
+            first.Append(12.ToString());
+            first.Append(' '.ToString());
+            first.Append(3.45.ToString());
+            first.Append(' '.ToString());
+            first.Append(a == 12).ToString();
 
-            Console.WriteLine(first == second); 
+            first.Append(' '.ToString());
+            first.Append(b > c).ToString();
 
-            Console.WriteLine($"First:  *{first}*");
+            first.AppendLine().Append('*', 40); 
+            Console.WriteLine(first);
+
 
 
 
