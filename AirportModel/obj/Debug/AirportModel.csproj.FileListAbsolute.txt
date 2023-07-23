@@ -1,0 +1,8 @@
+C:\Users\Joshu\Desktop\C#\AirportModel\bin\Debug\AirportModel.exe.config
+C:\Users\Joshu\Desktop\C#\AirportModel\bin\Debug\AirportModel.exe
+C:\Users\Joshu\Desktop\C#\AirportModel\bin\Debug\AirportModel.pdb
+C:\Users\Joshu\Desktop\C#\AirportModel\obj\Debug\AirportModel.csproj.AssemblyReference.cache
+C:\Users\Joshu\Desktop\C#\AirportModel\obj\Debug\AirportModel.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joshu\Desktop\C#\AirportModel\obj\Debug\AirportModel.csproj.CoreCompileInputs.cache
+C:\Users\Joshu\Desktop\C#\AirportModel\obj\Debug\AirportModel.exe
+C:\Users\Joshu\Desktop\C#\AirportModel\obj\Debug\AirportModel.pdb

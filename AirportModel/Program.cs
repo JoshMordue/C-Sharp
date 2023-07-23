@@ -10,6 +10,7 @@ namespace AirportModel
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

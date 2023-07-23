@@ -16,6 +16,11 @@ namespace CarGame
         private const char Info = 'i';
         private const char Quit = 'q';
 
+        // Directions
+        private const int DirectionLeft = -1;
+        private const int DirectionStraight = 0;
+        private const int DirectionRight = 1;
+
         static void Main(string[] args)
         {
             Console.Clear();
@@ -60,13 +65,13 @@ namespace CarGame
                     switch (control)
                     {
                         case Left:
-                            playing = Drive(batmobile.Speed, ref carPosition, -1);
+                            playing = Drive(batmobile.Speed, ref carPosition, DirectionLeft);
                             break;
                         case Straight:
-                            playing = Drive(batmobile.Speed, ref carPosition, 0);
+                            playing = Drive(batmobile.Speed, ref carPosition, DirectionStraight);
                             break;
-                        case Right:                            
-                            playing = Drive(batmobile.Speed, ref carPosition, 1);
+                        case Right:
+                            playing = Drive(batmobile.Speed, ref carPosition, DirectionRight);
                             break;
                         case Accelerate:
                             batmobile.Accelerate(accelerationFactor);
@@ -89,14 +94,14 @@ namespace CarGame
         {
             for (int i = 0; i < speed; i++)
             {
-                position += direction;
+                position = position + direction;
                 if (StillOnTrack(position, Road))
                 {
                     DrawRoad(position);
                 }
                 else
                 {
-                    Console.WriteLine("Oops! You've crashed, game over.");
+                    Console.WriteLine("Oops! You've crashed! Game over.");
                     return false;
                 }
             }
@@ -116,8 +121,13 @@ namespace CarGame
 
     class Car
     {
-        public int Speed { get; private set; } = 0;
-        private string name;
+        private int speed = 0;
+        public int Speed 
+        {
+            get { return speed; }
+            set { speed = value; }
+            }
+        private readonly string name;
 
         public Car(string carName)
         {
